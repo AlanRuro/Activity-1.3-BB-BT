@@ -1,21 +1,23 @@
 //Gerardo Ulises Sanchez Felix - A01641788
 
-// Backtracking implementation complexity
-// Time Complexity: O(2^(n^2)). 
-// The recursion can run upper-bound 2^(n^2) times. 
-// Output matrix is required so an extra space of size n*n is needed.
-// The recursive backtracking algorithm explores all possible paths in the maze.
-// For each cell, it has two choices (move right or move down) if it's a valid move.
-// As there are potentially 2^(n^2) paths to explore in the worst case, the time complexity 
-// is indeed exponential.
+/*
+Backtracking implementation complexity
+Time Complexity: O(2^(n^2)). 
+The recursion can run upper-bound 2^(n^2) times. 
+Output matrix is required so an extra space of size n*n is needed.
+The recursive backtracking algorithm explores all possible paths in the maze.
+For each cell, it has two choices (move right or move down) if it's a valid move.
+As there are potentially 2^(n^2) paths to explore in the worst case, the time complexity 
+is indeed exponential.
 
-// Auxiliary Space: O(n^2).
-// The auxiliary space complexity typically refers to the additional space required 
-// by the algorithm to store data other than the input. In this case, it should not be considered O(n^2) 
-// because the extra space required to store the recursive call stack hasn't been accounted for.
+Auxiliary Space: O(n^2).
+The auxiliary space complexity typically refers to the additional space required 
+by the algorithm to store data other than the input. In this case, it should not be considered O(n^2) 
+because the extra space required to store the recursive call stack hasn't been accounted for.
 
-// Therefore, the space complexity should be considered O(n^2) for the output matrix plus O(n^2) 
-// for the call stack, resulting in a total space complexity of O(n^2 + n^2) = O(2n^2) = O(n^2).
+Therefore, the space complexity should be considered O(n^2) for the output matrix plus O(n^2) 
+for the call stack, resulting in a total space complexity of O(n^2 + n^2) = O(2n^2) = O(n^2).
+*/
 
 #include <iostream>
 
